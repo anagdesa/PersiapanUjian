@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/etnamal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/textinputbg"
+        android:paddingLeft="10dp"
+        android:hint="nama lengkap"/>
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/etumur"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/textinputbg"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:hint="umur"/>
+
+        <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/etemail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/textinputbg"
+        android:paddingLeft="10dp"
+        android:hint="email"/>
+
+        <EditText
+        android:id="@+id/etpassword"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/textinputbg"
+        android:paddingLeft="10dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+                <RadioGroup
+                    android:id="@+id/rgJenisK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rlaki2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laki-laki"/>
+                    <RadioButton
+                        android:id="@+id/rperempuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Perempuan"/>
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Role"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+                <Spinner
+                    android:id="@+id/srole"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+        android:id="@+id/btregister"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:background="@drawable/btnb"
+        android:textColor="@color/putih"
+        android:text="Registrasi"/>
+
+    </LinearLayout>
+
+</ScrollView>
