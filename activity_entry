@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginVertical="20dp"
+    android:layout_marginHorizontal="40dp"
+    android:orientation="vertical"
+    tools:context=".EntryActivity">
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:id="@+id/btnamaku"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:hint="Nama Kuliner"
+        android:background="@drawable/textinputbg"/>
+
+    <!-- <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/btketernangan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:hint="keterangan"
+        android:background="@drawable/textinputbg"/>  -->
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/etkontributor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:hint="kontributor"
+        android:background="@drawable/textinputbg"/> -->
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/btlatitud"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:inputType="number"
+        android:hint="latitud"
+        android:background="@drawable/textinputbg"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/btlongtitud"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:inputType="number"
+        android:hint="longtitud"
+        android:background="@drawable/textinputbg"/>
+
+    <Button
+        android:id="@+id/btsimpan"
+        android:layout_marginTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="simpan"
+        android:background="@drawable/btnb"
+        android:textColor="@color/putih"
+        android:layout_gravity="end"
+        android:textStyle="bold"/>
+
+</LinearLayout>
